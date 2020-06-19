@@ -12,6 +12,11 @@ import {TableModule} from 'primeng/table';
 import { InputTextModule } from 'primeng/inputtext';
 import { DropdownModule } from 'primeng/dropdown';
 import { PanelModule } from 'primeng/panel';
+import { ButtonModule } from 'primeng/button';
+import {MessagesModule} from 'primeng/messages';
+import {MessageModule} from 'primeng/message';
+
+
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -39,7 +44,12 @@ registerLocaleData(localePt);
     TableModule,
     DropdownModule,
     InputTextModule,
-    PanelModule
+    PanelModule,
+    ButtonModule,
+    MessagesModule,
+    MessageModule
+
+
 
   ],
   providers: [

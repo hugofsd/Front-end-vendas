@@ -9,12 +9,17 @@ import { VendasService } from './../vendas/vendas.service';
 })
 export class VendasListagemComponent implements OnInit {
 
+  nome: any = {};
   vendas: Array<any>;
 
 
   constructor( private vendasService: VendasService) { }
 
   ngOnInit() {
+   this.listar();
+  }
+
+  listar(){
     this.vendasService.listar()
     .subscribe(response => this.vendas = response);
   }
